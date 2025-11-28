@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Refilling Station</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h2>WATER REFILLING</h2>
+    <nav>
+      <a href="home.html" class="active">Dashboard</a>
+      <a href="destination.html">Stations</a>
+      <a href="map.html">Map</a>
+      <a href="statistics.html">Statistics</a>
+      <a href="index.html">BACK</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard">
+    <header>
+      <h1>Welcome!</h1>
+      <p>Explore water refilling stations within the area</p>
+    </header>
+
+    
+    <section class="destinations">
+      <h2>Available Stations</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="2V Aqua Water Refilling Station.jpeg" alt="2V Aqua Water Refilling Station">
+          <h3>2V Aqua Water Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="G & M Water Surface Refilling Station.jpeg" alt="G & M Water Surface Refilling Station">
+          <h3>G & M Water Surface Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="Dsd Water Refilling Station.jpeg" alt="Dsd Water Refilling Station">
+          <h3>Dsd Water Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="JAPH FUEL Refilling Station.jpeg" alt="JAPH FUEL Refilling Station">
+          <h3>JAPH FUEL Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="TJ Water Refilling Station.jpeg" alt="TJ Water Refilling Station">
+          <h3>TJ Water Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="LRJ Water Refilling Station.jpeg" alt="LRJ Water Refilling Station">
+          <h3>LRJ Water Refilling Station</h3>
+        </div>
+        <div class="card">
+          <img src="RYSAX Water Refilling Station.jpeg" alt="RYSAX Water Refilling Station">
+          <h3>RYSAX Water Refilling Station</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-chart">
+      <div class="map-container">
+        <h2>Refilling Station Map</h2>
+        <div id="map"></div>
+      </div>
+
+      <div class="chart-container">
+        <h2>Customer Trends</h2>
+        <canvas id="visitorChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

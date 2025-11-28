@@ -1,0 +1,82 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* FULLSCREEN BACKGROUND */
+body {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 5.0)),  /* purple overlay */
+        url("bgg.jpg");  /* <-- your background photo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CENTERED CONTENT */
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #f1f5f9;
+}
+
+.logo {
+    width: 150px;
+    max-width: 70%;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+/* BUTTON */
+.proceed-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #7c3aed;
+    padding: 12px 32px;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.proceed-btn:hover {
+    background-color: #6d28d9;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .proceed-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
