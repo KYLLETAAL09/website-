@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us — Your Company</title>
+  <meta name="description" content="About Us — mission, vision, team, and contact information." />
+  <!-- Tailwind CDN for quick styling (good for prototypes). Replace with compiled CSS for production. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="https://via.placeholder.com/48" alt="Logo" class="w-12 h-12 rounded-md object-cover" />
+        <span class="font-semibold text-lg">Your Company</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/services" class="hover:text-blue-600">Services</a>
+        <a href="/aboutus.html" class="text-blue-700 font-medium">About</a>
+        <a href="/contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="md:hidden" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-white via-blue-50 to-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 md:py-20 grid gap-8 md:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Who we are</h1>
+        <p class="mt-4 text-gray-600 max-w-xl">We build practical, accessible digital solutions that help people and businesses solve real problems. Our team blends design, engineering, and domain knowledge to deliver software that works.</p>
+
+        <ul class="mt-6 grid gap-3 text-sm text-gray-700">
+          <li>✅ User-centered design</li>
+          <li>✅ Reliable and maintainable code</li>
+          <li>✅ Clear communication and teamwork</li>
+        </ul>
+
+        <a href="#team" class="inline-block mt-6 bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:brightness-95">Meet the team</a>
+      </div>
+
+      <div class="hidden md:block">
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://via.placeholder.com/720x480" alt="Team working together" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-2">
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h2 class="text-2xl font-semibold">Our Mission</h2>
+      <p class="mt-3 text-gray-600">To empower organizations and individuals through intuitive digital products that improve efficiency and delight users.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h2 class="text-2xl font-semibold">Our Vision</h2>
+      <p class="mt-3 text-gray-600">A world where technology makes everyday tasks simpler and opportunities more accessible for everyone.</p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="max-w-6xl mx-auto px-6 py-6">
+    <h3 class="text-xl font-semibold text-center">Our Values</h3>
+    <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="bg-white p-5 rounded-lg shadow-sm text-center">
+        <h4 class="font-semibold">Integrity</h4>
+        <p class="mt-2 text-sm text-gray-600">Honest work and clear communication.</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm text-center">
+        <h4 class="font-semibold">Craftsmanship</h4>
+        <p class="mt-2 text-sm text-gray-600">Quality code and thoughtful design.</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-sm text-center">
+        <h4 class="font-semibold">Collaboration</h4>
+        <p class="mt-2 text-sm text-gray-600">We succeed together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold text-center">The Team</h3>
+    <p class="text-center text-gray-600 mt-2">Talented folks who make the magic happen.</p>
+
+    <div class="mt-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Team card 1 -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <img src="https://via.placeholder.com/240" alt="Jane Doe — CEO" class="w-full h-40 object-cover rounded-md" />
+        <h4 class="mt-4 font-semibold">Irish joy gudes</h4>
+        <p class="text-sm text-gray-600">CEO</p>
+        <p class="mt-3 text-gray-600 text-sm">Leads product strategy and ensures we deliver value to customers.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm hover:underline">LinkedIn</a>
+          <a href="#" class="text-sm hover:underline">Email</a>
+        </div>
+      </article>
+
+      <!-- Team card 2 -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <img src="https://via.placeholder.com/240" alt="John Smith — Lead Engineer" class="w-full h-40 object-cover rounded-md" />
+        <h4 class="mt-4 font-semibold">Kylle taal</h4>
+        <p class="text-sm text-gray-600">Lead Engineer</p>
+        <p class="mt-3 text-gray-600 text-sm">Builds scalable systems and mentors the engineering team.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm hover:underline">GitHub</a>
+          <a href="#" class="text-sm hover:underline">Email</a>
+        </div>
+      </article>
+
+      <!-- Team card 3 -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <img src="https://via.placeholder.com/240" alt="Maria Lopez — Designer" class="w-full h-40 object-cover rounded-md" />
+        <h4 class="mt-4 font-semibold">Riander Paulo Raut-raut</h4>
+        <p class="text-sm text-gray-600">Designer</p>
+        <p class="mt-3 text-gray-600 text-sm">Crafts delightful interfaces and ensures a great user experience.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm hover:underline">Portfolio</a>
+          <a href="#" class="text-sm hover:underline">Email</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="bg-blue-600 text-white py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-semibold">Want to collaborate?</h3>
+      <p class="mt-3">Drop us a message and we'll get back to you within 1-2 business days.</p>
+      <a href="/contact" class="inline-block mt-6 bg-white text-blue-600 px-6 py-2 rounded-lg font-medium">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
+      <p>© <span id="year"></span> Your Company. All rights reserved.</p>
+      <nav class="flex gap-4 mt-3 md:mt-0">
+        <a href="/privacy" class="hover:underline">Privacy</a>
+        <a href="/terms" class="hover:underline">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set current year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
